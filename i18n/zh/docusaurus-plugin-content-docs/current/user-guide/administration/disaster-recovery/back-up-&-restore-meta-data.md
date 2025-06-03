@@ -84,7 +84,7 @@ greptime cli meta-restore [OPTIONS]
 
 ### 示例
 
-将导出的元数据从 s3 导入到 PostgreSQL 存储后端。此命令会导入 `ap-southeast-1-test-bucket` 的 `metadata_snapshot.metadata.fb` 文件中的数据：
+将导出的元数据从 s3 导入到 PostgreSQL 存储后端。此命令会导入 `my-test-bucket` 的 `metadata_snapshot.metadata.fb` 文件中的数据：
 
 ```bash
 greptime cli meta-restore --store-addrs 'password=password dbname=postgres user=postgres host=localhost port=5432' --backend postgres-store --s3 --s3-bucket my-test-bucket --s3-region ap-southeast-1 --s3-access-key <s3-access-key> --s3-secret-key <s3-secret-key>
